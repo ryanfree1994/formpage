@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Coffee Insights Survey</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1 id="title">Coffee Insights Survey</h1>
+        <p id="description">Fill out the form and receive personalized coffee recommendations</p>
+      </div>
+
+      <div id="survey-content">
+        <form id="survey-form" method="get">
+          <label id="name-label" for="name">Your Name:</label>
+          <input id="name" type="text" placeholder="Enter your name" required>
+
+          <label id="email-label" for="email">Your E-mail:</label>
+          <input id="email" type="email" placeholder="Enter your email" required>
+
+          <label id="number-label" for="number">Your Age:</label>
+          <input id="number" type="number" placeholder="Enter your age" min="0" max="100">
+
+          <label id="phone-label" for="phone">Your Phone Number:</label>
+          <input id="phone" type="tel">
+
+          <p>How many coffees do you drink a day?</p>
+          <select id="dropdown">
+            <option value="noselect_coffees">Please select an option</option>
+            <option value="one">1 coffee</option>
+            <option value="two">2 coffees</option>
+            <option value="three">3 coffees</option>
+            <option value="lotsofcoffee">Greater than 3 coffees</option>
+          </select>
+
+          <p>What is your favorite style of coffee?</p>
+          <label>
+            <input id="espresso" name="coffeestyle" type="radio" value="espresso">Espresso
+          </label>
+          <label>
+            <input id="french-press" name="coffeestyle" type="radio" value="frenchpress">French Press
+          </label>
+          <label>
+            <input id="drip" name="coffeestyle" type="radio" value="drip">Drip
+          </label>
+
+          <p>Where is the location of your favorite coffee bean?</p>
+          <label>
+            <input id="ethiopia" name="coffeorigin" type="radio" value="ethiopia">Ethiopia
+          </label>
+          <label>
+            <input id="brazil" name="coffeorigin" type="radio" value="brazil">Brazil
+          </label>
+          <label>
+            <input id="vietnam" name="coffeorigin" type="radio" value="vietnam">Vietnam
+          </label>
+          <label>
+            <input id="kenya" name="coffeorigin" type="radio" value="kenya">Kenya
+          </label>
+
+          <p>Where do you usually drink your coffee?</p>
+          <select id="dropdown_drinklocation">
+            <option value="noselect_coffeelocation">Please select an option</option>
+            <option value="home">At home</option>
+            <option value="travel">On the go</option>
+            <option value="coffeeshop">At the coffee shop</option>
+            <option value="office">In the office</option>
+          </select>
+
+          <p>How would you like to be contacted for your personalized coffee recommendations?</p>
+          <label>
+            <input id="email-msg" type="checkbox" value="email">Email
+          </label>
+          <label>
+            <input id="phone-msg" type="checkbox" value="phone">Phone
+          </label>
+          <label>
+            <input id="none" type="checkbox" value="none">None
+          </label>
+
+          <p>What is one thing you'd like to improve about your coffee?</p>
+          <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
